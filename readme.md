@@ -5,6 +5,5 @@
 ### Members
 - Piyotr Kao
 - Yoel Yonata
-- Natasha Carson
 - YuMing He
 - James Zhang
