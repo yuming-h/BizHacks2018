@@ -1,0 +1,5 @@
+﻿enable-migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\Products
+
+add-migration -ConfigurationTypeName StudentAPI.Migrations.Students.Configuration "InitialCreate"
+
+update-database -ConfigurationTypeName StudentAPI.Migrations.Students.Configuration
