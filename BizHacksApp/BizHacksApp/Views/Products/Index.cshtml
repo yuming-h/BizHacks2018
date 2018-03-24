@@ -1,0 +1,93 @@
+﻿@model IEnumerable<BizHacksApp.Models.Products.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Audio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProcessorType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProcessorSpeed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RamSize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HardDiskSpace)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GraphicsCard)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GPUMemory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GPUSpeed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Audio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProcessorType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProcessorSpeed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RamSize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HardDiskSpace)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GraphicsCard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GPUMemory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GPUSpeed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
+        </td>
+    </tr>
+}
+
+</table>

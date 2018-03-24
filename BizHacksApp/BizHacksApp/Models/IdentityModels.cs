@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using BizHacksApp.Models.Products;
 
 namespace BizHacksApp.Models
 {
@@ -29,5 +30,7 @@ namespace BizHacksApp.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Product> Products { get; set; }
     }
 }

@@ -1,0 +1,5 @@
+﻿enable-migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\Products
+
+add-migration -ConfigurationTypeName BizHacksApp.Migrations.Products.Configuration "Update Products table to include price and changed GPUSpeed to nullable double"
+
+update-database -ConfigurationTypeName BizHacksApp.Migrations.Products.Configuration

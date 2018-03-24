@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="icon" href="~/Content/Images/bestbuy_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>@ViewBag.Title Best Buy</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -17,13 +19,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href="@Url.Action("Index", "Home")" title="Best Buy">
+                    <img alt="Best Buy" class="MainLogo" src="@Url.Content("~/Content/Images/bestbuy_main.png")">
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { @class = "navlink", @style = "color: white" })</li>
+                    <li><a href="#" class="navlink" style="color: white;">Shop</a></li>
+                    <li>@Html.ActionLink("Brands", "Contact", "Home", new { @class = "navlink", @style = "color: white" })</li>
+                    <li>@Html.ActionLink("Products", "Index", "Products", new { @class = "navlink", @style = "color: white" })</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -33,7 +38,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - BizHacks2018 Team 32</p>
         </footer>
     </div>
 
