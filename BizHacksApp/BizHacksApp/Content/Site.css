@@ -1,6 +1,6 @@
 ﻿body {
-    padding: 0;
-    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 @font-face {
@@ -9,52 +9,10 @@
 }
 
 /*
-.MenuBar{
-    background-color:#1A5276;
-}
-*/
-
 .navbar {
     background-color: #003B64;
-    position: sticky;
-    margin: 0px;
-    padding: 0px;
-    color: white;
 }
-
-    .navbar ul, li, a {
-        display: block;
-        font-size: 20px;
-        display: inline;
-        text-decoration: none;
-        padding: 15px;
-        color: white;
-    }
-
-        .navbar ul, li, a:hover {
-            color: yellow;
-        }
-
-    .navbar .SearchBar {
-        position: absolute;
-        top: 20px;
-        left: 750px;
-    }
-
-    .navbar input[type=text] {
-        padding: 5px;
-        font-size: 12px;
-        border: none;
-        height: 15px;
-        outline: none;
-    }
-
-    .navbar .SearchBar button {
-        float: right;
-        padding: 5px 10px;
-        border: none;
-        cursor: pointer;
-    }
+*/
 
 .cart {
     position: absolute;
@@ -68,9 +26,32 @@ body {
 }
 
 .MainLogo {
-    float: left;
-    margin-left: 215px;
-    padding: 10px;
+    width: 60px;
+    height: 40px;
+    margin-right: 2vw;
+    margin-top: 5%;
+}
+
+.nav .navlink {
+    font-weight: bold;
+}
+
+.navbar-inverse {
+    background-color: #1A5276;
+    border: none;
+}
+
+.navbar-right {
+    font-weight: bold;
+}
+
+.CartLogo {
+    width: 50%;
+}
+
+#cartDisplay {
+    padding: 0px;
+    margin: 10px;
 }
 
 h1 {
