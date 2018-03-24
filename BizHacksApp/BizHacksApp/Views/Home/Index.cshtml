@@ -5,6 +5,28 @@
 
 <body>
 
+    <table id="producttable">
+        <tr>
+            <td>
+                <img src="~/Content/Images/laptop.jpg"  alt="laptop" height="60" width="120"/>
+            </td>
+            <td>
+                <img src="~/Content/Images/laptop.jpg"  alt="laptop" height="60" width="120"\ />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Product 1
+            </th>
+            <th>
+                Product 2
+            </th>
+        </tr>
+    </table>
+    <div id="recommendation">
+        Based on our data, we recommend:        
+    </div>
+
     <button class="accordion">
         <table id="spectitles">
             <tr>
@@ -17,8 +39,8 @@
         <p>
             <table id="specdetails">
                 <tr>
-                    <th id="deta1">product 1 details</th>
-                    <th id="deta2">product 2 details</th>
+                    <td id="deta1">product 1 details</td>
+                    <td id="deta2">product 2 details</td>
                 </tr>
             </table>
         </p>
@@ -36,8 +58,8 @@
         <p>
             <table id="specdetails">
                 <tr>
-                    <th id="detb1">product 1 details</th>
-                    <th id="detb2">product 2 details</th>
+                    <td id="detb1">product 1 details</td>
+                    <td id="detb2">product 2 details</td>
                 </tr>
             </table>
         </p>
@@ -55,12 +77,13 @@
         <p>
             <table id="specdetails">
                 <tr>
-                    <th id="detc1">product 1 details</th>
-                    <th id="detc2">product 2 details</th>
+                    <td id="detc1">product 1 details</td>
+                    <td id="detc2">product 2 details</td>
                 </tr>
             </table>
         </p>
     </div>
+
 
     <script>
         var acc = document.getElementsByClassName("accordion");
