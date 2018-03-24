@@ -220,6 +220,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\bestbuy_icon.png" />
+    <Content Include="Content\Images\bestbuy_main.png" />
+    <Content Include="Content\Images\shopping-cart.png" />
     <Content Include="Docs\Migrations.txt" />
     <Content Include="Content\Images\laptop.jpg" />
     <Content Include="Content\LeftGreen.css" />

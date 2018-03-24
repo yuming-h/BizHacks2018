@@ -1,11 +1,11 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
-    font-family: glyphicons src:url('BizHacksApp/BizHacksApp/fonts/glyphicons-halflings-regular.ttf')
+    font-family: glyphicons;
+    src: url('BizHacksApp/BizHacksApp/fonts/glyphicons-halflings-regular.ttf');
 }
 
 /*
@@ -14,7 +14,7 @@
 }
 */
 
-.MenuBar {
+.navbar {
     background-color: #003B64;
     position: sticky;
     margin: 0px;
@@ -22,7 +22,7 @@
     color: white;
 }
 
-    .MenuBar ul, li, a {
+    .navbar ul, li, a {
         display: block;
         font-size: 20px;
         display: inline;
@@ -31,17 +31,17 @@
         color: white;
     }
 
-        .MenuBar ul, li, a:hover {
+        .navbar ul, li, a:hover {
             color: yellow;
         }
 
-    .MenuBar .SearchBar {
+    .navbar .SearchBar {
         position: absolute;
         top: 20px;
         left: 750px;
     }
 
-    .MenuBar input[type=text] {
+    .navbar input[type=text] {
         padding: 5px;
         font-size: 12px;
         border: none;
@@ -49,7 +49,7 @@
         outline: none;
     }
 
-    .MenuBar .SearchBar button {
+    .navbar .SearchBar button {
         float: right;
         padding: 5px 10px;
         border: none;
@@ -115,14 +115,14 @@ textarea {
 }
 
     #producttable th {
-        font-size:24px;
+        font-size: 24px;
         text-align: left;
         padding-left: 5px;
     }
 
 /* Recommendation*/
 #recommendation {
-    font-size:18px;
+    font-size: 18px;
 }
 
 /* the dropdown menu*/
@@ -171,14 +171,14 @@ textarea {
     float: left;
 }
 
-#spectitles th {
+    #spectitles th {
         text-align: left;
         padding-left: 5px;
-}
+    }
 
-#spectitles th:nth-child(2n+1) {
-        background-color: #4CAF50;
-}
+        #spectitles th:nth-child(2n+1) {
+            background-color: #4CAF50;
+        }
 
 /*The spec details*/
 #specdetails {
@@ -188,10 +188,7 @@ textarea {
 }
 
     #specdetails th {
-        font-style:normal;
+        font-style: normal;
         text-align: left;
         padding-left: 5px;
     }
-
-
-
