@@ -1,0 +1,21 @@
+@font-face{
+    font-family: glyphicons
+    src:url('BizHacksApp/BizHacksApp/fonts/glyphicons-halflings-regular.ttf')
+}
+
+.MenuBar{
+    background-color:#1A5276;
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    color:white;
+}
+
+body{
+    margin: 0px;
+}
+
+MainLogo{
+    float:left;
+    
+}
