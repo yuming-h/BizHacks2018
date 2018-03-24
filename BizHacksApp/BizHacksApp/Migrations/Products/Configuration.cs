@@ -4,6 +4,7 @@ namespace BizHacksApp.Migrations.Products
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using BizHacksApp.Data;
 
     internal sealed class Configuration : DbMigrationsConfiguration<BizHacksApp.Models.ApplicationDbContext>
     {
@@ -27,6 +28,9 @@ namespace BizHacksApp.Migrations.Products
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.Products.AddOrUpdate(
+                p => p.ProductId, DummyData.getProducts().ToArray());
+            context.SaveChanges();
         }
     }
 }
