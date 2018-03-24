@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizHacksApp", "BizHacksApp\BizHacksApp.csproj", "{0A112B38-8F48-4917-8D39-D49E197772E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bizhacksapp", "bizhacksapp\bizhacksapp.csproj", "{C73FBE6B-2C68-4A73-A6A7-AA68A5D236A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0A112B38-8F48-4917-8D39-D49E197772E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A112B38-8F48-4917-8D39-D49E197772E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A112B38-8F48-4917-8D39-D49E197772E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A112B38-8F48-4917-8D39-D49E197772E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C73FBE6B-2C68-4A73-A6A7-AA68A5D236A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C73FBE6B-2C68-4A73-A6A7-AA68A5D236A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C73FBE6B-2C68-4A73-A6A7-AA68A5D236A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C73FBE6B-2C68-4A73-A6A7-AA68A5D236A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4D23ABAA-5744-4127-AAF8-4B17AE050F6D}
+		SolutionGuid = {BA916B6B-7C54-4385-9EAC-6AACF590F068}
 	EndGlobalSection
 EndGlobal
