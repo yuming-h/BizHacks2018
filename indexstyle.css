@@ -1,0 +1,81 @@
+@font-face{
+    font-family: glyphicons
+    src:url('BizHacksApp/BizHacksApp/fonts/glyphicons-halflings-regular.ttf')
+}
+
+/*
+.MenuBar{
+    background-color:#1A5276;
+}
+*/
+
+.MenuBar{
+    background-color:#003B64;
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    color:white;
+}
+
+.MenuBar ul,li,a{
+    display:block;
+    font-size: 20px;
+    display:inline;
+    text-decoration:none;
+    padding:15px;
+    color: white;
+}
+
+.MenuBar ul,li,a:hover{
+    color: yellow;
+}
+
+.MenuBar .SearchBar{
+    position:absolute;
+    top: 20px;
+    left:750px;
+}
+
+.MenuBar input[type=text]{
+    padding: 5px;
+    font-size: 12px;
+    border:none;
+    height:15px;
+    outline: none;
+}
+
+.MenuBar .SearchBar button{
+    float:right;
+    padding:5px 10px;
+    border:none;
+    cursor: pointer;
+} 
+
+.cart{
+    position: absolute;
+    float: right;
+    top:10px;
+    right:200px;
+}
+body{
+    margin: 0px;
+}
+
+.MainLogo{
+    float:left;
+    margin-left:215px;
+    padding: 10px;
+}
+
+h1{
+    display: inline-block;
+    position: sticky;
+}
+
+h2{
+    text-align: center;
+}
+
+html{
+    font-family: arial;
+}

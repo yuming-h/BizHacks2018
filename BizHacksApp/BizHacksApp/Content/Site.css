@@ -1,6 +1,89 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    
+}
+
+@font-face {
+    font-family: glyphicons src:url('BizHacksApp/BizHacksApp/fonts/glyphicons-halflings-regular.ttf')
+}
+
+/*
+.MenuBar{
+    background-color:#1A5276;
+}
+*/
+
+.MenuBar {
+    background-color: #003B64;
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+    .MenuBar ul, li, a {
+        display: block;
+        font-size: 20px;
+        display: inline;
+        text-decoration: none;
+        padding: 15px;
+        color: white;
+    }
+
+        .MenuBar ul, li, a:hover {
+            color: yellow;
+        }
+
+    .MenuBar .SearchBar {
+        position: absolute;
+        top: 20px;
+        left: 750px;
+    }
+
+    .MenuBar input[type=text] {
+        padding: 5px;
+        font-size: 12px;
+        border: none;
+        height: 15px;
+        outline: none;
+    }
+
+    .MenuBar .SearchBar button {
+        float: right;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+.cart {
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 200px;
+}
+
+body {
+    margin: 0px;
+}
+
+.MainLogo {
+    float: left;
+    margin-left: 215px;
+    padding: 10px;
+}
+
+h1 {
+    display: inline-block;
+    position: sticky;
+}
+
+h2 {
+    text-align: center;
+}
+
+html {
+    font-family: arial;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -9,7 +92,8 @@
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
+/* 
+   Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
@@ -22,3 +106,92 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Table for product image and title*/
+#producttable {
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+}
+
+    #producttable th {
+        font-size:24px;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+/* Recommendation*/
+#recommendation {
+    font-size:18px;
+}
+
+/* the dropdown menu*/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+    .active, .accordion:hover {
+        float: right;
+        background-color: #ccc;
+    }
+
+    .accordion:after {
+        content: '\002B';
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+
+.active:after {
+    float: right;
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*The title of the specification*/
+#spectitles {
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+}
+
+#spectitles th {
+        text-align: left;
+        padding-left: 5px;
+}
+
+#spectitles th:nth-child(2n+1) {
+        background-color: #4CAF50;
+}
+
+/*The spec details*/
+#specdetails {
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+}
+
+    #specdetails th {
+        font-style:normal;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+
+
