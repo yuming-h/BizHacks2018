@@ -1,0 +1,106 @@
+﻿@model BizHacksApp.Models.Products.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Audio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Audio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProcessorType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProcessorType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProcessorSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProcessorSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RamSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RamSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HardDiskSpace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HardDiskSpace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GraphicsCard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GraphicsCard)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GPUMemory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GPUMemory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GPUSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GPUSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
