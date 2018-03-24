@@ -262,17 +262,3 @@ __pycache__/
 
 # UML Diagram
 *.vsdx
-
-# Only include front end files
-*.sln
-*.config
-*.asax
-*.cs
-*.csproj
-Properties/
-Controllers/
-Models/
-obj/
-bin/
-App_Start/
-App_Data/
