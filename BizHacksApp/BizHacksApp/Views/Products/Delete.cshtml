@@ -1,0 +1,112 @@
+﻿@model BizHacksApp.Models.Products.Product
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Audio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Audio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProcessorType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProcessorType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProcessorSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProcessorSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RamSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RamSize)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HardDiskSpace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HardDiskSpace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GraphicsCard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GraphicsCard)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GPUMemory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GPUMemory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GPUSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GPUSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

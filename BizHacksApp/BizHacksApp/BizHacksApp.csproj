@@ -192,18 +192,38 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Data\DummyData.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Products\201803240809217_Added Products for BizHacks2018.cs" />
+    <Compile Include="Migrations\Products\201803240809217_Added Products for BizHacks2018.Designer.cs">
+      <DependentUpon>201803240809217_Added Products for BizHacks2018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Products\201803240830378_Updated Database.cs" />
+    <Compile Include="Migrations\Products\201803240830378_Updated Database.Designer.cs">
+      <DependentUpon>201803240830378_Updated Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Products\201803240843209_Update Products table to include price and changed GPUSpeed to nullable double.cs" />
+    <Compile Include="Migrations\Products\201803240843209_Update Products table to include price and changed GPUSpeed to nullable double.Designer.cs">
+      <DependentUpon>201803240843209_Update Products table to include price and changed GPUSpeed to nullable double.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Products\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Products\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\bestbuy_icon.png" />
+    <Content Include="Content\Images\bestbuy_main.png" />
+    <Content Include="Content\Images\shopping-cart.png" />
+    <Content Include="Docs\Migrations.txt" />
     <Content Include="Content\Images\laptop.jpg" />
     <Content Include="Content\LeftGreen.css" />
     <Content Include="favicon.ico" />
@@ -260,6 +280,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
+    <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\Details.cshtml" />
+    <Content Include="Views\Products\Edit.cshtml" />
+    <Content Include="Views\Products\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -276,6 +301,17 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\Products\201803240809217_Added Products for BizHacks2018.resx">
+      <DependentUpon>201803240809217_Added Products for BizHacks2018.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Products\201803240830378_Updated Database.resx">
+      <DependentUpon>201803240830378_Updated Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Products\201803240843209_Update Products table to include price and changed GPUSpeed to nullable double.resx">
+      <DependentUpon>201803240843209_Update Products table to include price and changed GPUSpeed to nullable double.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
